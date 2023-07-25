@@ -1,0 +1,19 @@
+kind: role
+metadata:
+  name: gha-token-bot
+spec:
+  allow:
+    rules:
+    - resources:
+      - token
+      verbs:
+      - list
+      - create
+      - read
+      - update
+      - delete
+  deny: {}
+  options:
+    cert_format: standard
+    max_session_ttl: 0h30m0s
+version: v5

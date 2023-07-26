@@ -1,0 +1,12 @@
+kind: token
+metadata:
+  name: gha-provisioning-token
+spec:
+  bot_name: gha-token-bot
+  github:
+    allow:
+    - repository: yourgithuborg/yourgithubrepo
+  join_method: github
+  roles:
+  - Bot
+version: v2
